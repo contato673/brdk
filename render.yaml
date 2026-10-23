@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: eclipse-moba-urb1
+    runtime: node
+    plan: free
+    region: virginia
+    buildCommand: node bootstrap.cjs
+    startCommand: node app/cloud-server.cjs
+    healthCheckPath: /health
